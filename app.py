@@ -31,7 +31,7 @@ def ask():
 
     try:
         response = client.chat.completions.create(
-            model="openai/gpt-oss-20b",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful, creative AI assistant that can answer factual questions, summarize text, generate creative content, or give advice."},
                 {"role": "user", "content": prompt}
