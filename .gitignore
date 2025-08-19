@@ -1,0 +1,14 @@
+# Ignore environment variables (contains your GitHub token)
+.env
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folders
+venv/
+.venv/
+
+# Optional: system files
+.DS_Store
+Thumbs.db
