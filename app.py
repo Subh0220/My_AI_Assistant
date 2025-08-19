@@ -9,8 +9,7 @@ app = Flask(__name__)
 # ==== GITHUB MODELS (TOKEN FROM .ENV) ====
 load_dotenv()  # loads .env at project root
 client = OpenAI(
-    base_url="https://models.inference.ai.azure.com",
-    api_key=os.getenv("GITHUB_TOKEN")  # read safely from .env
+    api_key=os.getenv("GROQ_API_KEY"), base_url="https://api.groq.com/openai/v1"
 )
 
 feedback_file = "feedback.txt"
@@ -31,7 +30,7 @@ def ask():
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="openai/gpt-oss-20b",
             messages=[
                 {"role": "system", "content": "You are a helpful, creative AI assistant that can answer factual questions, summarize text, generate creative content, or give advice."},
                 {"role": "user", "content": prompt}
