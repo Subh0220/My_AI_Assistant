@@ -18,9 +18,9 @@
 3. Create and activate a virtual environment:
   -python -m venv venv
    ### Linux/Mac
-  -source venv/bin/activate 
+     -source venv/bin/activate 
    ### Windows
-  -venv\Scripts\activate 
+     -venv\Scripts\activate 
 5. Install dependencies:
   -pip install -r requirements.txt
 6. Create a `.env` file in the root directory and add your API key:
