@@ -9,7 +9,8 @@ app = Flask(__name__)
 # ==== GITHUB MODELS (TOKEN FROM .ENV) ====
 load_dotenv()  # loads .env at project root
 client = OpenAI(
-    api_key=os.getenv("GROQ_API_KEY"), base_url="https://api.groq.com/openai/v1"
+    base_url="https://models.inference.ai.azure.com",
+    api_key=os.getenv("GITHUB_TOKEN")  # read safely from .env
 )
 
 feedback_file = "feedback.txt"
