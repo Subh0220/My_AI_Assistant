@@ -11,7 +11,7 @@ This project provides a simple conversational interface where users can ask ques
 - Feedback system (👍 / 👎) stored locally in feedback.txt
 - Easy to run on any system with Python 3
 
-##Project Structure
+## Project Structure
 ├── app.py                Flask backend
 ├── requirements.txt      Python dependencies
 ├── templates/
@@ -26,16 +26,16 @@ This project provides a simple conversational interface where users can ask ques
 - Python 3.8+
 - OpenAI API key (or GitHub token if using models through GitHub endpoint)
 - Install dependencies:
-  pip install -r requirements.txt
+  - pip install -r requirements.txt
 
 ## Environment Setup
 - Create a .env file in the project root:
-  GITHUB_TOKEN or API_KEY=your_github_token_here or your_api_key_here
+  - GITHUB_TOKEN or API_KEY=your_github_token_here or your_api_key_here
 
 ## Running the project:
 1. Clone this repository:
-git clone https://github.com/Subh0220/My_AI_Assistant.git
-cd My_AI_Assistant
+- git clone https://github.com/Subh0220/My_AI_Assistant.git
+- cd My_AI_Assistant
 2. Install dependencies:
 pip install -r requirements.txt
 3. Run the Flask app:
