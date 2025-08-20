@@ -12,15 +12,15 @@ This project provides a simple conversational interface where users can ask ques
 - Easy to run on any system with Python 3
 
 ## Project Structure
-├── app.py                Flask backend
-├── requirements.txt      Python dependencies
-├── templates/
-│   └── index.html        Frontend HTML
-├── static/
-│   ├── style.css         Styling
-│   └── script.js         Frontend logic
-├── feedback.txt          Stores user feedback
-└── .env                  Stores your API key (not shared in repo)
+- /app.py               <!--Flask backend-->
+- /requirements.txt     <!--Python dependencies-->
+- templates/
+ - index.html           <!--Frontend HTML-->
+- static/
+ - style.css            <!--Styling-->
+ - script.js            <!--Frontend logic-->
+- /feedback.txt         <!--Stores user feedback-->
+- /.env                 <!--Stores your API key (not shared in repo)-->
 
 ## Requirements
 - Python 3.8+
