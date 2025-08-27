@@ -12,20 +12,26 @@
     <div class="container">
         <h1 class="title">🤖 AI Assistant</h1>
         <div class="bubble"></div>
+
+        <!-- Input container -->
         <div class="input-container">
             <textarea id="userInput" placeholder="Type your prompt here..."></textarea>
             <button id="sendBtn">Ask AI</button>
         </div>
 
-        <!-- Updated response card with typing animation + feedback -->
+        <!-- Response card -->
         <div id="responseCard" class="hidden">
             <h2>AI's Response</h2>
-            <div id="responseText"></div> <!-- Typing animation & AI response appear here -->
+            <div id="responseText"></div>
             <div class="feedback">
                 <button onclick="sendFeedback('Yes')">👍 Yes</button>
                 <button onclick="sendFeedback('No')">👎 No</button>
             </div>
         </div>
     </div>
+
+    <!-- Floating Upload Button -->
+    <label for="fileInput" class="upload-icon">+</label>
+    <input type="file" id="fileInput" style="display:none;" />
 </body>
 </html>

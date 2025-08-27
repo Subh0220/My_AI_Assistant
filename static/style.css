@@ -261,3 +261,27 @@ button:active{ transform: translateY(0); }
   button{ padding:13px 16px; }
   #responseCard{ padding:16px 14px; }
 }
+/* Floating Upload Icon */
+.upload-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--button-grad-start), var(--button-grad-end));
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,.35);
+  transition: transform .2s ease, box-shadow .2s ease;
+  z-index: 1000;
+}
+.upload-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 28px rgba(127,90,240,.35);
+}
